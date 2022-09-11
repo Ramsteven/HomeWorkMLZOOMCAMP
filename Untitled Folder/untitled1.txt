@@ -1,0 +1,15 @@
+convert to nb
+
+The latest implementation without warnings:
+
+import nbformat
+
+nb = nbformat.read('<file-path-with-format>', 
+                   nbformat.current_nbformat)
+
+nbformat.write(nb, '<path-to-save>/<filename>.ipynb', 
+               nbformat.NO_CONVERT)
+If nbformat is not installed install it like below
+
+pip install nbformat
+Read more about nbformat here.
